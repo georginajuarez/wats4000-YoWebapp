@@ -1,8 +1,17 @@
 $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 
+// variables:scss (in app/styles directory)
+// Override Bootstrap variables: this is imported before bootstrap version (in bower_components) to override it (default) to our duplicated file and edits
+@import "variables";
+
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
+
+// content:scss (app/styles directory)
+// Site-specific styles
+// Add additional stylesheets below
+@import "content";
 
 .browsehappy {
   margin: 0.2em 0;

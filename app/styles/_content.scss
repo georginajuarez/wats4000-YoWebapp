@@ -1,0 +1,19 @@
+body {
+  color: gold;
+}
+
+/* Should make h4 yellow and p blue (currently not working: idk why)*/
+.marketing {
+  h4 {
+    color: $brand-warning;
+  }
+  p {
+    color: $brand-primary;
+  }
+}
+
+// border radius mixins from bower/bootstrap/assets
+.container .jumbotron {
+  @include border-top-radius(0px);
+  @include border-bottom-radius(50px);
+}
