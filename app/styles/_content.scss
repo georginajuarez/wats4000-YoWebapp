@@ -4,7 +4,7 @@ body {
 
 /* Should make h4 yellow and p blue (currently not working: idk why)*/
 .marketing {
-  h4 {
+  h4, a {
     color: $brand-warning;
   }
   p {
